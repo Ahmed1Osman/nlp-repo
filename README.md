@@ -15,13 +15,14 @@ Welcome to the **NLP Projects** repository! 🎉 Here you’ll find an assortmen
 
 Natural Language Processing (NLP) is all about making computers understand and interact with human language. This repo features various projects that dive into different aspects of NLP, including:
 
-- Text Classification
 - Sentiment Analysis
+- Grammer Correction
 - Named Entity Recognition (NER)
 - Language Modeling
 - Text Generation
 - Machine Translation
-
+- Text Classification
+  
 ## Projects 🛠️
 
 ### 1. Sentiment Analysis on Social Media Data 🌟
