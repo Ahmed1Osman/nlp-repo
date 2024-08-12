@@ -37,6 +37,9 @@ Natural Language Processing (NLP) is all about making computers understand and i
 ### 4. Text Classification with CNNs 🏆
 *Description*: Classify text using Convolutional Neural Networks.
 
+### 5. Grammar Correction with BART ✍️
+*Description*: Correct grammatical errors in text using BART.
+
 ## Getting Started 🚀
 
 Ready to dive in? Follow these steps:
