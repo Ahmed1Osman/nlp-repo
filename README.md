@@ -4,7 +4,7 @@ Welcome to the **NLP Projects** repository! 🎉 Here you’ll find an assortmen
 
 ## Table of Contents 📚
 
-- [Introduction](#Introduction)
+- [Introduction](#Introduction 🧠)
 - [Projects](#projects)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
