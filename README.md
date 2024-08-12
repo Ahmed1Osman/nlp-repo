@@ -6,7 +6,7 @@ Welcome to the **NLP Projects** repository! 🎉 Here you’ll find an assortmen
 
 - [Introduction](#Introduction🧠)
 - [Projects](#Projects🛠️)
-- [Getting Started](#Getting-Started🚀)
+- [Getting Started](#Getting-Started)
 - [Usage](#Usage🏃)
 - [Contributing](#contributing)
 - [License](#license)
@@ -41,7 +41,6 @@ Natural Language Processing (NLP) is all about making computers understand and i
 *Description*: Correct grammatical errors in text using BART.
 
 ## Getting-Started 
-## 🚀
 
 Ready to dive in? Follow these steps:
 
