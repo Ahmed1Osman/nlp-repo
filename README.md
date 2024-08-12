@@ -4,14 +4,14 @@ Welcome to the **NLP Projects** repository! 🎉 Here you’ll find an assortmen
 
 ## Table of Contents 📚
 
-- [Introduction](#Introduction🧠)
-- [Projects](#Projects🛠️)
+- [Introduction](#Introduction)
+- [Projects](#Projects🛠)
 - [Getting Started](#Getting-Started)
-- [Usage](#Usage🏃)
+- [Usage](#Usage)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduction🧠
+## Introduction
 
 Natural Language Processing (NLP) is all about making computers understand and interact with human language. This repo features various projects that dive into different aspects of NLP, including:
 
@@ -23,7 +23,7 @@ Natural Language Processing (NLP) is all about making computers understand and i
 - Machine Translation
 - Text Classification
   
-## Projects🛠️
+## Projects
 
 ### 1. Sentiment Analysis on Social Media Data 🌟
 *Description*: Analyze tweets to classify sentiment as positive, negative, or neutral.
@@ -49,5 +49,5 @@ Ready to dive in? Follow these steps:
    ```bash
    git clone https://github.com/yourusername/nlp.git
 
-# Usage🏃
+# Usage
 Each project has its own set of instructions. Check out the README.md files within each project folder for the specific details on how to run and use the code.
