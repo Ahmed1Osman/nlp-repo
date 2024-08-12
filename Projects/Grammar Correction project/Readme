@@ -1,1 +1,23 @@
+# Grammar Correction Model
+
+## Overview
+This project implements a grammar correction model using the BART architecture. The model is trained to correct grammatical errors in sentences.
+
+## Features
+- **Model**: BART for Conditional Generation
+- **Data**: Custom dataset of incorrect and corrected sentences
+- **Training**: Fine-tuned with early stopping and regularization techniques
+- **Testing**: Evaluates correction accuracy on sample sentences
+
+## Getting Started
+
+### Prerequisites
+- Python 3.x
+- PyTorch
+- Transformers library
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
 
