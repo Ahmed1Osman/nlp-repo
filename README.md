@@ -1,6 +1,6 @@
 # NLP Projects 🚀
 
-Welcome to the **NLP Projects** repository! 🎉 Here you’ll find an assortment of my adventures in the realm of Natural Language Processing (NLP). From text classification to sentiment analysis, and more, explore my experiments and implementations!
+Welcome to my **NLP Projects** repository! 🎉 Here you’ll find an assortment of my adventures in the realm of Natural Language Processing (NLP). From text classification to sentiment analysis, and more, explore my experiments and implementations!
 
 ## Table of Contents 📚
 
