@@ -17,6 +17,7 @@ Natural Language Processing (NLP) is all about making computers understand and i
 
 - Sentiment Analysis
 - Grammer Correction
+- Fake News
 - Named Entity Recognition (NER)
 - Language Modeling
 - Text Generation
@@ -28,14 +29,12 @@ Natural Language Processing (NLP) is all about making computers understand and i
 ### 1. Sentiment Analysis on Social Media Data 🌟
 *Description*: Analyze tweets to classify sentiment as positive, negative, or neutral.
 
-### 2. Named Entity Recognition with BERT 🤖
-*Description*: Use BERT to identify and classify entities in text.
+### 2. Fake News 🌟
+*Description*: Model designed to detect and classify fake news articles using natural language processing techniques and machine learning algorithms.
 
-### 3. Text Generation using GPT-2 ✨
-*Description*: Generate text using GPT-2.
+### 3. ----------
 
-### 4. Text Classification with CNNs 🏆
-*Description*: Classify text using Convolutional Neural Networks.
+### 4. -------
 
 ### 5. Grammar Correction with BART ✍️
 *Description*: Correct grammatical errors in text using BART.
