@@ -1,24 +1,64 @@
-**Project Summary: Fake News Detection Using LSTM**
+# Fake News Detection Project
 
-The mission, should you choose to accept it, is to build a model that can distinguish between real and fake news articles. Here’s a quick rundown of how we achieved this:
+## Overview
+This project aims to build a machine learning model that can classify news articles as "Fake" or "Not Fake" using various algorithms. The model leverages text data from both fake and true news sources to train and evaluate its accuracy.
 
-### 🛠️ Data Preparation:
-- Merged two datasets (`True.csv` and `Fake.csv`) into a single DataFrame. 
-- Added a column to label the articles as "real" or "fake" (because labeling is important!).
+## Dataset
+The project utilizes two datasets:
+- **Fake News Dataset**: Contains news articles that are labeled as fake.
+- **True News Dataset**: Contains news articles that are labeled as real.
 
-### 🧹 Text Preprocessing:
-- Removed all those pesky stopwords and short words that were just clutter.
-- Tokenized the text and padded sequences so our model doesn’t trip over uneven input lengths.
+These datasets are combined to create a balanced dataset for training and testing the model.
 
-### 🏗️ Model Building:
-- Created a snazzy LSTM-based model with an embedding layer and a Bidirectional LSTM. 
-- Compiled it with `adam` optimizer and `binary_crossentropy` loss, because we're not here to play around!
+## Installation
+To run this project, ensure you have the following libraries installed:
 
-### 🚀 Model Training and Evaluation:
-- Trained the model and then tested it to see if it could tell the difference between a genuine article and a piece of fiction.
-- Evaluated the model’s performance using accuracy (spoiler: it did quite well!).
+```bash
+pip install pandas numpy scikit-learn seaborn matplotlib
+```
 
-### 📊 Confusion Matrix:
-- Generated a confusion matrix to see where our model got things right and where it hilariously went wrong. 
+## Data Preparation
+1. **Loading Data**: The project reads the datasets from CSV files.
+2. **Labeling Data**: Each dataset is labeled with a class (`0` for fake news and `1` for true news).
+3. **Sampling**: Ten rows are removed from each dataset for manual testing, and a combined dataset is created.
+4. **Preprocessing**: Text preprocessing steps are applied to clean the news articles:
+   - Lowercasing the text
+   - Removing special characters, URLs, and punctuation
+   - Eliminating numbers
 
-Our project showcases the power of deep learning for text classification and gives you insights into model performance with a pinch of humor and a lot of data science!
+## Feature Extraction
+The cleaned text data is vectorized using **TF-IDF Vectorization**, which transforms the text data into a numerical format suitable for machine learning models.
+
+## Model Training
+Three different models are trained and evaluated:
+1. **Logistic Regression**
+2. **Decision Tree Classifier**
+3. **Random Forest Classifier**
+
+Each model's performance is evaluated using a classification report that includes metrics such as precision, recall, and F1-score.
+
+## Manual Testing
+Users can input news articles for manual testing. The trained models will predict whether the input news is "Fake" or "Not A Fake News".
+
+## Usage
+To run the project, execute the main script. After the models are trained, you can input news articles when prompted, and the models will provide predictions.
+
+```python
+news = str(input())
+manual_testing(news)
+```
+
+## Results
+The classification reports provide detailed insights into the models' performance, showcasing their ability to accurately classify news articles based on the training data.
+
+## Future Work
+- Experimenting with more advanced algorithms (e.g., neural networks).
+- Implementing hyperparameter tuning for better model performance.
+- Expanding the dataset with more varied news sources for a more robust model.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+- Dataset sources for the fake and true news articles.
+- Scikit-learn for providing powerful tools for machine learning.
