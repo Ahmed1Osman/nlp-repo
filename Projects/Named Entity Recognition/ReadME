@@ -1,1 +1,57 @@
+# Named Entity Recognition (NER) Notebook
 
+This notebook implements a Named Entity Recognition (NER) model using TensorFlow and Keras. It processes text data to identify and classify named entities such as person names, organizations, locations, etc.
+
+## Contents
+
+1. Data Loading and Preprocessing
+2. Sentence Vectorization
+3. Tag Mapping
+4. Dataset Generation
+5. Model Architecture
+6. Custom Loss and Accuracy Functions
+7. Model Training
+8. Prediction
+
+## Requirements
+
+- TensorFlow 2.x
+- NumPy
+- Pandas
+
+## Usage
+
+1. Ensure you have the required libraries installed.
+2. Place your data in the appropriate directories:
+   - `data/large/train/sentences.txt` and `data/large/train/labels.txt` for training data
+   - `data/large/val/sentences.txt` and `data/large/val/labels.txt` for validation data
+   - `data/large/test/sentences.txt` and `data/large/test/labels.txt` for test data
+3. Run the notebook cells in order.
+
+## Key Functions
+
+- `load_data(file_path)`: Loads data from text files.
+- `get_sentence_vectorizer(sentences)`: Creates and adapts a TextVectorization layer for tokenizing sentences.
+- `label_vectorizer(labels, tag_map)`: Converts label strings to padded label IDs.
+- `NER(len_tags, vocab_size, embedding_dim=50)`: Defines the NER model architecture.
+- `masked_loss(y_true, y_pred)` and `masked_accuracy(y_true, y_pred)`: Custom loss and accuracy functions that handle padded sequences.
+- `predict(sentence, model, sentence_vectorizer, tag_map)`: Predicts NER tags for a given sentence.
+
+## Model Architecture
+
+The NER model consists of:
+1. An Embedding layer
+2. An LSTM layer
+3. A Dense layer with log softmax activation
+
+## Training
+
+The model is trained for 2 epochs using the Adam optimizer with a learning rate of 0.01. The batch size is set to 64.
+
+## Evaluation
+
+The model's performance is evaluated on the test set using the custom masked accuracy metric.
+
+## Prediction
+
+You can use the `predict` function to get NER tags for new sentences. The notebook includes an example of how to use this function and display the results.
